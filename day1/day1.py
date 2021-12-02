@@ -1,3 +1,5 @@
+# Challenge 1
+
 with open('input.txt') as f:
     lines = f.readlines()
 
@@ -9,6 +11,8 @@ for i in range(1,len(depth_numbers)):
             increases += 1
 
 print("Number of increases: " + str(increases))
+
+# Challenge 2
 
 number = 0
 slide_numbers = []
