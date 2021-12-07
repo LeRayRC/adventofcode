@@ -10,8 +10,8 @@ fuel_cost_candidate = 0
 for c in range(0,max(crabs)):
     fuel_cost_candidate = 0
     for i in range(0,len(crabs)):
-        for s in range (0,abs(crabs[i] - c)+1):
-            fuel_cost_candidate += s
+        steps = abs(crabs[i] - c)
+        fuel_cost_candidate += (steps * (steps + 1) / 2)
     if fuel_cost_candidate < fuel_cost:
         fuel_cost = 0
         fuel_cost += fuel_cost_candidate
